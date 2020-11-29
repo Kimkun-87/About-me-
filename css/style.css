@@ -54,7 +54,7 @@
 
 /* ====== Home 영역 꾸미기 ========== */
 #home{
-    background: url("../images/bg.png") center/cover no-repeat;
+    background: url("../images/bg_2.png") center/cover no-repeat;
     padding: 40px;
     padding-top: 120px;
     text-align: center;
@@ -562,7 +562,93 @@
         right: 16px;
         bottom: 16px;
     }
+}
 
- 
+/* 반응형으로 꾸미기  768px 스크린*/
+@media screen and (max-width: 380px){
+    :root{
+        /* Font size */
+        --font-large: 30px;
+        --font-medium: 18px;
+        --font-regular: 16px;
+        --font-small: 14px;
+        --font-micro: 12px;
+    }
+    
+    .home__title{
+        font-size: var(--font-medium);
+    }
 
+    .home__description,
+    .home__contact{
+        font-size: var(--font-small);
+    }
+
+    .navbar__toggle-btn{
+        display: block;
+        top: 16px;
+        right: 16px;
+        font-size: var(--font-medium);
+    }
+
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--color-black);
+    }
+
+    .navbar__menu{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar__menu.open{
+        display: block;
+    }
+
+    .section{
+        padding: 16px;
+        padding-top: 50px;
+    }
+
+    .home__avatar{
+        width: 120px;
+        height: 120px;
+    }
+    .about__majors{
+        display: none;
+    }
+
+    .skillset{
+        flex-direction: column;
+    }
+
+    .category__btn{
+        margin: 4px 0;
+        width: 60%;
+    }
+
+    .project{
+        flex-grow: 1;
+    }
+    
+    .jobs{
+        flex-direction: column;
+    }
+
+    .job__left{
+        padding-bottom: 20px;
+    }
+
+    .job__right{
+        border-top: 1px solid var(--color-grey);
+        padding-top: 20px;
+    }
+
+    .arrow-up{
+        right: 16px;
+        bottom: 16px;
+    }
 }

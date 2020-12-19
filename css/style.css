@@ -157,6 +157,17 @@
     padding: 0 10px;
 }
 
+.hobby img{
+    padding-left: 80px;
+}
+
+.hobby h1{
+    padding-bottom: 30px;
+}
+
+
+
+
 /* .major__icon{
     width: 170px;
     height: 170px;
